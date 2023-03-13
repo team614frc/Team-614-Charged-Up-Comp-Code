@@ -11,7 +11,7 @@ import com.revrobotics.CANSparkMaxLowLevel.MotorType;
 public class Manipulator extends SubsystemBase {
   /* Creates a new intake subsystem */
   public PowerDistribution pdh;
-  CANSparkMax intakeMotor;
+  public CANSparkMax intakeMotor;
 
   public Manipulator() {
     intakeMotor = new CANSparkMax(Constants.INTAKE_MOTOR, MotorType.kBrushless);

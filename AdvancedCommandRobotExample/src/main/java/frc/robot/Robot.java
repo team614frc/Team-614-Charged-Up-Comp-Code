@@ -18,6 +18,15 @@ public class Robot extends TimedRobot {
     RobotContainer.elevatorSubsystem.resetElevatorEncoders();
     RobotContainer.tiltSubsystem.resetTiltEncoders();
     RobotContainer.driveTrainSubsystem.resetEncoderValues();
+    RobotContainer.driveTrainSubsystem.followerLeftMotor.burnFlash();
+    RobotContainer.driveTrainSubsystem.followerRightMotor.burnFlash();
+    RobotContainer.driveTrainSubsystem.leaderLeftMotor.burnFlash();
+    RobotContainer.driveTrainSubsystem.leaderRightMotor.burnFlash();
+    RobotContainer.manipulator.intakeMotor.burnFlash();
+    RobotContainer.elevatorSubsystem.elevatorLeftMotor.burnFlash();
+    RobotContainer.elevatorSubsystem.elevatorRightMotor.burnFlash();
+    RobotContainer.tiltSubsystem.tiltRightMotor.burnFlash();
+    RobotContainer.tiltSubsystem.tiltLeftMotor.burnFlash();
   }
 
   @Override
@@ -25,10 +34,13 @@ public class Robot extends TimedRobot {
     CommandScheduler.getInstance().run();
     SmartDashboard.putNumber("Tilt Right Encoder Value", RobotContainer.tiltSubsystem.getRightHeight());
     SmartDashboard.putNumber("Tilt Left Encoder Value", RobotContainer.tiltSubsystem.getLeftHeight());
+    // RobotContainer.ledSubsystem.setLedColorOrange();
   }
 
   @Override
   public void disabledInit() {
+    // RobotContainer.ledSubsystem.setLedColorOrange();
+    RobotContainer.driveTrainSubsystem.setBreakMode();
   }
 
   @Override

@@ -95,10 +95,11 @@ public final class Constants {
   public static final double TILT_MAX_ENCODER_VALUE = 20; // 17 //15
 
   // Manipulator PID setpoints (test)
-  public static final double MANIPULATOR_SPEED_INTAKE = 0.8; // for testing
-  public static final double MANIPULATOR_SPEED_OUTTAKE = -0.8;
-  public static final double MANIPULATOR_SPEED_BLEH = -0.4;
-  public static final double MANIPULATOR_SPEED_PCHOO = -1;
+  public static final double MANIPULATOR_SPEED_INTAKE = -0.8; // for testing
+  public static final double MANIPULATOR_SPEED_OUTTAKE = 0.8;
+  public static final double MANIPULATOR_SPEED_BLEH = 0.4;
+  public static final double MANIPULATOR_SPEED_PCHOO = 1;
+  public static final double MANIPULATOR_SPEED_REST = -0.05;
 
   // Thresholds
   public static final double MANIPULATOR_THRESHOLD = 10;
@@ -108,7 +109,7 @@ public final class Constants {
   public static final double TILT_DOWN_SPEED = -0.2;
   public static final double TILT_REST_SPEED = 0.05;
   public static final double TILT_DEFAULT_SETPOINT = 5;
-  public static final double TILT_LOAD_STATION_SETPOINT = 10.48; //10.48 for charge station
+  public static final double TILT_LOAD_STATION_SETPOINT = 11.5; //10.48 for charge station
   public static final double TILT_HIGH_CUBE_AUTO_SETPOINT = 13;
   public static final double TILT_MID_SCORE_SETPOINT = 14.5;
   public static final double TILT_PCHOO_SETPOINT = 18;

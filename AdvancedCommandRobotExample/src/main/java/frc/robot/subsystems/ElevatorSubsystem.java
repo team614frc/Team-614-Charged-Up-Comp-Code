@@ -9,8 +9,8 @@ import com.revrobotics.CANSparkMaxLowLevel.MotorType;
 
 public class ElevatorSubsystem extends SubsystemBase {
 
-  CANSparkMax elevatorLeftMotor = null;
-  CANSparkMax elevatorRightMotor = null;
+  public CANSparkMax elevatorLeftMotor = null;
+  public CANSparkMax elevatorRightMotor = null;
 
   public ElevatorSubsystem() {
     elevatorRightMotor = new CANSparkMax(Constants.ELEVATOR_RIGHT_MOTOR,
